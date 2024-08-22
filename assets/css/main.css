@@ -4154,16 +4154,4 @@ input, select, textarea {
 		}
 
 	}
-/* 为了让横幅文本优先显示 */
-#banner .inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-#banner .inner h2 {
-    z-index: 1000;
-    position: relative;
-}
