@@ -110,7 +110,7 @@
             historyDiv.innerHTML = '<h3>查询历史</h3>';
             historyRecords.forEach((record, index) => {
                 const recordElement = document.createElement('p');
-                recordElement.textContent = `${index + 1}. 姓名: ${record.name}, 准考证号: ${record.examNumber}`;
+                recordElement.textContent = `${index + 1}. 姓名: ${record.name}, 地区: ${record.examNumber}`;
                 historyDiv.appendChild(recordElement);
             });
         }
