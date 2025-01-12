@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天水市联考成绩查询成绩查询</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar img {
+            max-height: 30px; /* 控制图片高度不超过顶部栏 */
+            margin-right: 10px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 50px; /* 确保内容不被导航栏遮挡 */
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/ks.png" alt="Logo">
+        天水市联考成绩查询
+    </div>
+    <div class="container">
+        <h2>成绩查询</h2>
+        <input type="text" id="name" placeholder="请输入姓名">
+        <input type="number" id="examNumber" placeholder="县区+学校名称">
+        <button onclick="checkScore()">查询</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function checkScore() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = '同学,你能不能有一点判断能力,这你也敢查';
+        }
+    </script>
+</body>
+</html>
+
+
+
