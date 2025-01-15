@@ -35,26 +35,36 @@
             align-items: center;
             opacity: 0;
             transition: opacity 1s forwards;
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
         .file-list {
             list-style-type: none;
             padding: 0;
             margin: 20px 0;
+            width: 100%;
         }
         .file-list li {
             margin: 5px 0;
         }
         .file-list a {
             text-decoration: none;
-            color: white;
+            color: #333; /* Darker text color for better contrast */
             font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.2); /* Original background color */
             padding: 10px 20px;
             border-radius: 5px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
             transition: background-color 0.3s;
         }
         .file-list a:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.4); /* Slightly darker on hover */
         }
         #welcome-message {
             font-size: 32px;
@@ -72,7 +82,7 @@
 </head>
 <body>
     <div id="gradient"></div>
-    <div id="welcome-message">欢迎来到DUTYC工作室文件管理</div>
+    <div id="welcome-message">DUTYC仓库文件管理</div>
     <div class="container">
         <h1>文件列表</h1>
         <ul class="file-list" id="file-list">
@@ -122,6 +132,3 @@
     </script>
 </body>
 </html>
-
-
-
