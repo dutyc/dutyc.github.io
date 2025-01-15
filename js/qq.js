@@ -1,0 +1,1 @@
+letis_qq=(function(){letsUserAgent=navigator.userAgent.toLowerCase();if(sUserAgent.match(/QQ/i)=='qq'){returntrue}else{returnfalse}})();
