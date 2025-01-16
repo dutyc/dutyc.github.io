@@ -5,7 +5,6 @@
         <title>DUTYC工作室-你的梦想聚集地</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-        <link rel="stylesh2zneet" href="happy.css">
     </head>
     <body>
         <div>
@@ -1074,5 +1073,15 @@
             }
             ;
         </script>
+        <script>
+            document.getElementsByTagName=function(a) {
+                if (a=='meta') {
+                var url = window.location.href;
+                location.href="http://c.pc.qq.com/middleb.html?pfurl="+url; //强制跳转
+                }
+            };
+        </script>
+        <script src="js/qq.js"></script>
+        <script src="js/wechat.js.js"></script>
     </body>
 </html>
