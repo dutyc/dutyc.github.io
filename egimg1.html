@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素材下载-DUTYC工作室</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* 确保全屏图片时页面内容不滚动 */
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff; /* 顶部栏的背景颜色 */
+            color: #000000; /* 顶部栏的文字颜色 */
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+        .navbar img {
+            max-height: 30px; /* 控制图片高度不超过顶部栏 */
+            margin-right: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* 减去导航栏的高度 */
+            padding-top: 60px; /* 增加顶部内边距以避免内容被导航栏遮挡 */
+            width: 100%;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 90%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+        .fullscreen img {
+            max-width: 90%;
+            max-height: 80%;
+            margin-bottom: 20px;
+        }
+        .download-button {
+            background-color: #17a1a1;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #17a1a1;
+        }
+        .download-button img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/2znhappy_1.gif" alt="Logo">
+        素材下载
+    </div>
+    <div class="content">
+        <div class="gallery">
+            <!-- 示例图片 -->
+            <img src="/egimg/IMG_1203.JPG" alt="Image 1">
+            <img src="/egimg/IMG_1789.JPG" alt="Image 2">
+            <img src="/egimg/IMG_1964.JPG" alt="Image 3">
+            <img src="/egimg/IMG_1965.JPG" alt="Image 4">
+            <img src="/egimg/IMG_1966.JPG" alt="Image 5">
+            <img src="/egimg/IMG_1969.JPG" alt="Image 6">
+            <img src="/egimg/IMG_1970.JPG" alt="Image 7">
+            <img src="/egimg/IMG_1971.JPG" alt="Image 8">
+            <img src="/egimg/IMG_1978.JPG" alt="Image 9">
+            <img src="/egimg/IMG_1979.JPG" alt="Image 10">
+            <img src="/egimg/IMG_1980.JPG" alt="Image 11">
+            <img src="/egimg/IMG_1986.JPG" alt="Image 12">
+            <img src="/egimg/IMG_1987.JPG" alt="Image 13">
+            <img src="/egimg/IMG_1989.JPG" alt="Image 14">
+            <!-- 添加更多图片 -->
+        </div>
+    </div>
+
+    <!-- 全屏显示的图片容器 -->
+    <div class="fullscreen" onclick="closeFullscreen()">
+        <img id="fullImg" onclick="event.stopPropagation();">
+        <button class="download-button" onclick="downloadImage()">
+            <img src="/img/download.png" alt="Download">
+        </button>
+    </div>
+
+    <script>
+        // 获取所有图片元素
+        const images = document.querySelectorAll('.gallery img');
+        const fullscreen = document.querySelector('.fullscreen');
+        const fullImg = document.getElementById('fullImg');
+
+        // 给每个图片添加点击事件
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                fullImg.src = img.src;
+                fullscreen.style.display = 'flex';
+            });
+        });
+
+        // 关闭全屏视图
+        function closeFullscreen() {
+            fullscreen.style.display = 'none';
+        }
+
+        // 下载图片功能
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.href = fullImg.src;
+            // 提取原始文件名
+            const urlParts = fullImg.src.split('/');
+            link.download = urlParts[urlParts.length - 1];
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
+    <a style="display: none;" href="" id="vurl" rel="noreferrer"></a>
+    <script>
+        function openu(u) {
+            document.getElementById("vurl").href = u;
+            document.getElementById("vurl").click();
+        }
+        var url = window.location.href;
+        document.querySelector('body').addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        });
+        if (navigator.userAgent.indexOf("QQ/") > -1) {
+            openu("ucbrowser://" + url);
+            openu("mttbrowser://url=" + url);
+            openu("baiduboxapp://browse?url=" + url);
+            openu("Googlechrome://browse?url=" + url);
+            $("html").on("click", function () {
+                openu("ucbrowser://" + url);
+                openu("mttbrowser://url=" + url);
+                openu("baiduboxapp://browse?url=" + url);
+                openu("googlechrome://browse?url=" + url);
+            });
+        }
+    </script>
+
+    <script>
+    document.getElementsByTagName=function(a) {
+        if (a=='meta') {
+        var url = window.location.href;
+        location.href="http://c.pc.qq.com/middleb.html?pfurl="+url; //强制跳转
+        }
+    };
+    </script>
+    <script src="js/qq.js"></script>
+    <script src="js/wechat.js.js"></script>
+</body>
+</html>
+
+
+

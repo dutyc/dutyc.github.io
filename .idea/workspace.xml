@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/appraiserres.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/cs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iPhone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1203.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1789.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1964.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1965.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1966.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1969.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1970.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1971.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1978.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1979.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1980.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1986.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1987.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_1989.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/_img_.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/imghqu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/download.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wechat.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/wzhangh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tc.html" beforeDir="false" afterPath="$PROJECT_DIR$/tc.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +84,39 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHubclone\dutyc.github.io\img" />
       <recent name="D:\GitHubcloser\dutyc.github.io\img" />
       <recent name="D:\GitHubcloser\dutyc.github.io\file" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="imghqu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dutyc.github.io" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/egimg" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/egimg/imghqu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.imghqu" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,7 +140,7 @@
       <workItem from="1736860131634" duration="2032000" />
       <workItem from="1736939487529" duration="5568000" />
       <workItem from="1738063703953" duration="98000" />
-      <workItem from="1738144417424" duration="799000" />
+      <workItem from="1738144417424" duration="5952000" />
     </task>
     <servers />
   </component>
@@ -116,5 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dutyc_github_io$imghqu.coverage" NAME="imghqu 覆盖结果" MODIFIED="1738149582464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/egimg" />
   </component>
 </project>
