@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/egimg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1203.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1789.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1964.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1965.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1966.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1969.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1970.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1971.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1978.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1979.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1980.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1986.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1987.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/IMG_1989.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/_img_.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/imghqu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/download.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tc.html" beforeDir="false" afterPath="$PROJECT_DIR$/tc.html" afterDir="false" />
-    </list>
+    <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +118,7 @@
       <workItem from="1736860131634" duration="2032000" />
       <workItem from="1736939487529" duration="5568000" />
       <workItem from="1738063703953" duration="98000" />
-      <workItem from="1738144417424" duration="5952000" />
+      <workItem from="1738144417424" duration="6252000" />
     </task>
     <servers />
   </component>
