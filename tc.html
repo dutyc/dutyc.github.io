@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可放大的照片墙</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden; /* 确保全屏图片时页面内容不滚动 */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 90%;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .fullscreen img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+<div class="gallery">
+    <!-- 示例图片 -->
+    <img src="/img/FPV.jpg" alt="Image 1">
+    <img src="/img/anby.png" alt="Image 2">
+    <img src="/img/ard.jpg" alt="Image 3">
+    <!-- 添加更多图片 -->
+</div>
+
+<!-- 全屏显示的图片容器 -->
+<div class="fullscreen" onclick="closeFullscreen()">
+    <img id="fullImg" onclick="event.stopPropagation();">
+</div>
+
+<script>
+    // 获取所有图片元素
+    const images = document.querySelectorAll('.gallery img');
+    const fullscreen = document.querySelector('.fullscreen');
+    const fullImg = document.getElementById('fullImg');
+
+    // 给每个图片添加点击事件
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            fullImg.src = img.src;
+            fullscreen.style.display = 'flex';
+        });
+    });
+
+    // 关闭全屏视图
+    function closeFullscreen() {
+        fullscreen.style.display = 'none';
+    }
+</script>
+</body>
+</html>
