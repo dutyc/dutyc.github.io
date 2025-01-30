@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2290.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2291.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2292.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2293.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2294.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2295.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2296.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/egimg/IMG_2297.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/egimg.html" beforeDir="false" afterPath="$PROJECT_DIR$/egimg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/egimg/_img_.txt" beforeDir="false" afterPath="$PROJECT_DIR$/egimg/_img_.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +57,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/GitHubcloser/dutyc.github.io",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHubcloser/dutyc.github.io&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\GitHubclone\dutyc.github.io\img" />
@@ -121,6 +131,7 @@
       <workItem from="1736939487529" duration="5568000" />
       <workItem from="1738063703953" duration="98000" />
       <workItem from="1738144417424" duration="7404000" />
+      <workItem from="1738238730424" duration="717000" />
     </task>
     <servers />
   </component>
@@ -142,6 +153,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dutyc_github_io$imghqu.coverage" NAME="imghqu 覆盖结果" MODIFIED="1738149582464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/egimg" />
+    <SUITE FILE_PATH="coverage/dutyc_github_io$imghqu.coverage" NAME="imghqu 覆盖结果" MODIFIED="1738245795335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/egimg" />
   </component>
 </project>
