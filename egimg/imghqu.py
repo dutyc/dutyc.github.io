@@ -1,3 +1,4 @@
+#一个简单的HTML的<img>标签生成小程序
 def get_user_input():
     print("请输入文件目录信息（输入完成后按两次回车结束输入）：")
     contents = []
