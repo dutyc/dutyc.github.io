@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/egimg.html" beforeDir="false" afterPath="$PROJECT_DIR$/egimg.html" afterDir="false" />
-    </list>
+    <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +119,7 @@
       <workItem from="1736939487529" duration="5568000" />
       <workItem from="1738063703953" duration="98000" />
       <workItem from="1738144417424" duration="7404000" />
-      <workItem from="1738238730424" duration="1091000" />
+      <workItem from="1738238730424" duration="1350000" />
     </task>
     <servers />
   </component>
