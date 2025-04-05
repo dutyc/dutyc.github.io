@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活瞬间 - DUTYC工作室摄影作品</title>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #5CE0E5;
+        }
+
+        .hero {
+            height: 70vh;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .hero-text {
+            color: white;
+            text-align: center;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #5CE0E5;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #4acfd4;
+            transform: translateY(-2px);
+        }
+
+        .gallery-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 300;
+            color: #333;
+        }
+
+        .section-title p {
+            color: #777;
+            max-width: 600px;
+            margin: 15px auto 0;
+            line-height: 1.6;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .item-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .item-info {
+            opacity: 1;
+        }
+
+        .item-info h3 {
+            margin: 0 0 5px;
+            font-weight: 500;
+        }
+
+        .item-info p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .footer-section a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #5CE0E5;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="/img/2znhappy_1.gif" alt="DUTYC工作室logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#">首页</a>
+                    <a href="#">作品集</a>
+                    <a href="#">关于我们</a>
+                    <a href="#">摄影技巧</a>
+                    <a href="#">联系我们</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>捕捉生活中的美好瞬间</h1>
+            <p>用DUTYC工作室的专业视角，记录那些温暖而真实的日常时刻</p>
+            <a href="#" class="btn">浏览作品</a>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>精选作品</h2>
+                <p>DUTYC工作室记录的街角、家庭、自然中的动人时刻</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/egimg/IMG_1789.JPG" alt="">
+                    <div class="item-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/egimg/IMG_1964.JPG" alt="">
+                    <div class="item-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="公园长椅">
+                    <div class="item-info">
+                        <h3>公园长椅</h3>
+                        <p>老人与鸽子共享午后时光</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photo4.jpg" alt="厨房时光">
+                    <div class="item-info">
+                        <h3>厨房时光</h3>
+                        <p>家人一起准备晚餐的温馨场景</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photo5.jpg" alt="街角咖啡店">
+                    <div class="item-info">
+                        <h3>街角咖啡店</h3>
+                        <p>冬日里冒着热气的咖啡杯</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photo6.jpg" alt="阳台植物">
+                    <div class="item-info">
+                        <h3>阳台植物</h3>
+                        <p>阳光下的多肉植物与猫咪</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于DUTYC工作室</h3>
+                <p>我们以专业视角捕捉日常生活中的美好瞬间，用镜头讲述真实而温暖的故事。</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <a href="#">首页</a>
+                <a href="#">作品集</a>
+                <a href="#">摄影工作坊</a>
+                <a href="#">关于我们</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <a href="#">邮箱: info@dutyc-studio.com</a>
+                <a href="#">电话: 123-456-7890</a>
+                <div class="social-links">
+                    <a href="#">微博</a>
+                    <a href="#">微信</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 DUTYC工作室. 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+</html>
