@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1800b802-fbd0-4d2f-9b66-6f37928f81cb" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/egimg/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg/output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/egimg2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,6 +123,7 @@
       <workItem from="1738144417424" duration="7404000" />
       <workItem from="1738238730424" duration="1350000" />
       <workItem from="1743313958344" duration="1739000" />
+      <workItem from="1747477310952" duration="513000" />
     </task>
     <servers />
   </component>
